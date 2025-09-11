@@ -108,7 +108,7 @@
           Gameinstance =unityInstance;
 		  window.unityInstance=unityInstance;
           fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
+            document.makeFullscreen('unity-container');
           };
         }).catch((message) => {
           alert(message);
